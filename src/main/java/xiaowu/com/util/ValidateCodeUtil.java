@@ -137,11 +137,5 @@ public class ValidateCodeUtil {
         ImageIO.write(bufferedImage, "png", sos);  
         sos.close();  
     }  
-	
-	public static void main(String[] args) throws IOException {
-		ValidateCodeUtil validateCodeUtil=new ValidateCodeUtil();
-		System.out.println(validateCodeUtil.getCode());
-		String path="D:\\"+new Date().getTime()+".png";
-		validateCodeUtil.write(path);
-	}
+
 }
